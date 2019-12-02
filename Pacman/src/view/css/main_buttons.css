@@ -1,0 +1,126 @@
+.button{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-border-radius: 12px;
+    -fx-font-family:"Copperplate Gothic Light", Helvetica, Arial, sans-serif;
+    -fx-font-size: 18pt;
+    -fx-effect: dropshadow(three-pass-box , rgba(255,255,255,0.6) , 30, 0.7 , 0 , 0);
+
+}
+
+.button:hover {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-inner-border: transparent;
+    -fx-body-color:  rgba(255,255,255,0.3);
+    -fx-text-fill: black;
+    -fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, -fx-body-color;
+    -fx-background-radius: 11px;
+}
+.text-input:focused{
+    -fx-text-fill: white;
+}
+#start_btn{
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-font-family:"Copperplate Gothic Light", Helvetica, Arial, sans-serif;
+    -fx-font-size: 18pt;
+    -fx-border-radius: 180px;
+}
+#start_btn:hover{
+    -fx-background-color: transparent;
+    -fx-border-width: 15;
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-font-family:"Copperplate Gothic Light", Helvetica, Arial, sans-serif;
+    -fx-text-fill: white;
+    -fx-font-size: 14pt;
+    -fx-border-radius: 180px;
+    -fx-background-repeat: no-repeat;
+}
+#options_lbl{
+    -fx-font-family: "PacFont", Helvetica, Arial, sans-serif;
+    -fx-font-size: 16pt;
+    -fx-text-fill: rgba(255, 255, 255,0.9);
+}
+#leaderboard_lbl {
+    -fx-font-family: "PacFont", Helvetica, Arial, sans-serif;
+    -fx-font-size: 16pt;
+    -fx-text-fill: rgba(255, 255, 255,0.9);
+}
+#manageQ_lbl{
+    -fx-font-family: "PacFont", Helvetica, Arial, sans-serif;
+    -fx-font-size: 16pt;
+    -fx-text-fill: rgba(255, 255, 255,0.9);
+}
+#addQ_lbl{
+    -fx-font-family: "PacFont", Helvetica, Arial, sans-serif;
+    -fx-font-size: 16pt;
+    -fx-text-fill: rgba(255, 255, 255,0.9);
+}
+#QText_lbl,#possibleAns_lbl,#a_lbl,#b_lbl,#c_lbl,#d_lbl,#correctAns_lbl,#difficulty_lbl{
+    -fx-font-family:"Copperplate Gothic Light", Helvetica, Arial, sans-serif;
+    -fx-text-fill: white;
+    -fx-font-size: 14pt;
+}
+#a_txt,#b_txt,#c_txt,#d_txt{
+    -fx-background-color: transparent;
+    -fx-font-family:"Copperplate Gothic Light", Helvetica, Arial, sans-serif;
+    -fx-font-size: 12pt;
+    -fx-text-fill: white;
+}
+.text-area {
+    -fx-background-color: rgba(53,89,119,0.1);
+    -fx-text-fill: white;
+    -fx-font-size: 14pt;
+    -fx-border-color: white;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+#correctAns_cb,#difficulty_cb{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-border-radius: 10px;
+
+    -fx-font-family:"Copperplate Gothic Light", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14pt;
+    -fx-effect: dropshadow(three-pass-box , rgba(255,255,255,1) , 30, 0.7 , 0 , 0);
+    
+}
+#correctAns_cb,#difficulty_cb:focused{
+    
+   -fx-text-fill: white;
+    
+}
+
+.combo-box .list-view .list-cell {
+-fx-text-fill: black;
+}
+
+.combo-box .list-cell {
+  -fx-text-fill: white;
+}
+
+#on_btn:focused{
+    -fx-background-color: rgba(255,255,255,0.5);
+    -fx-background-radius: 12px;
+
+}
+
+#off_btn:focused{
+    -fx-background-color: rgba(255,255,255,0.5);
+    -fx-background-radius: 12px;
+}
+

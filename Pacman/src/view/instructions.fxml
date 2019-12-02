@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane minHeight="544.0" minWidth="972.9998779296875" pickOnBounds="true" prefHeight="570.0" prefWidth="1013.333251953125" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.instructionsController">
+  <children>
+    <ImageView fitHeight="570.0" fitWidth="1013.3333126618901" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/11.png" />
+      </image>
+    </ImageView>
+     <ImageView fitHeight="570.0" fitWidth="1013.3333126618901" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/11Animated.gif" backgroundLoading="true"/>
+      </image>
+    </ImageView>
+    <Label fx:id="leaderboard_lbl" layoutX="98.0" layoutY="173.0" style="" stylesheets="@css/main_buttons.css" text="instructions" textFill="WHITE" underline="false" />
+      <Button fx:id="back_btn" layoutX="874.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" style="-fx-background-color: transparent;" stylesheets="@css/playerNickname.css">
+         <graphic>
+            <ImageView fx:id="back_img" fitHeight="54.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="cancel_btn" layoutX="932.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" style="-fx-background-color: transparent;" stylesheets="@css/playerNickname.css">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cancel.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="109.0" layoutY="208.0" text="Goal:" textFill="WHITE">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="24.0" />
+         </font></Label>
+      <Text fill="WHITE" layoutX="109.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guide Pac-Man around the maze and eat all the candies whilst avoiding those nasty ghosts. " wrappingWidth="809.734375">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="109.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you eat a question candy, you can then eat the newly spawned temporary ghosts!" wrappingWidth="762.234375">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label layoutX="109.0" layoutY="344.0" text="Scoring:" textFill="WHITE">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="109.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The threats to Pac-Man are the Ghosts and the Poison Candy. They must be avoided." wrappingWidth="762.234375">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="109.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="After Pac-Man has eaten a question candy, Temporary ghosts will appear." wrappingWidth="743.234375">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="109.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Each temporary ghost represents a possible answer to the given question." wrappingWidth="743.234375">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#4697db" layoutX="109.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="White candy............ 1 point" wrappingWidth="762.234375">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#4697db" layoutX="109.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Silver candy............ 50 points" wrappingWidth="282.73443603515625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+       <Text fill="#4697db" layoutX="433.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poison(Green) candy......-1 life point" wrappingWidth="420.23443603515625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#4697db" layoutX="109.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy................ 100 points" wrappingWidth="236.0">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="109.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A correct answer will grant you: " wrappingWidth="264.73443603515625">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#4697db" layoutX="109.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medium............ 200 points" wrappingWidth="236.0">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#4697db" layoutX="109.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hard................ 500 points" wrappingWidth="236.0">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#4697db" layoutX="433.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hard..................-50 points" wrappingWidth="236.0">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#4697db" layoutX="433.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medium............-100 points" wrappingWidth="244.23443603515625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="433.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A wrong answer will grant you: " wrappingWidth="264.73443603515625">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#4697db" layoutX="432.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy................ -250 points" wrappingWidth="228.23443603515625">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label layoutX="109.0" layoutY="485.0" text="FInishing the game:" textFill="WHITE">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="109.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The level ends when Pac-Man finishes eating all the candies on the board. A bonus of 100 points will then be awarded" wrappingWidth="854.734375">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="109.0" layoutY="560.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The winning player is the player with the most points!" wrappingWidth="854.734375">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font>
+      </Text>
+  </children>
+</AnchorPane>

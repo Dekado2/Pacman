@@ -1,0 +1,85 @@
+
+#twoP_btn{
+    -fx-background-color: rgba(186, 186, 186, 0.3);
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-font-size: 13pt;
+    -fx-border-radius: 0px 12px 12px 0px;
+    -fx-background-radius: 0px 12px 12px 0px;
+    -fx-font-family:"Copperplate Gothic Light", Helvetica, Arial, sans-serif;
+}
+#twoP_btn:hover {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-inner-border: transparent;
+    -fx-body-color:  rgba(186, 186, 186,0.8);
+    -fx-background-radius: 0px 12px 12px 0px;
+    -fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, -fx-body-color;
+}
+
+#oneP_btn{
+    -fx-background-color: rgba(186, 186, 186, 0.3);
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-font-size: 13pt;
+    -fx-border-radius: 12px 0px 0px 12px;
+    -fx-background-radius: 12px 0px 0px 12px;
+    -fx-font-family:"Copperplate Gothic Light", Helvetica, Arial, sans-serif;
+}
+
+#oneP_btn:hover {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-inner-border: transparent;
+    -fx-body-color:  rgba(186, 186, 186,0.8);
+    -fx-background-radius: 12px 0px 0px 12px;
+    -fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, -fx-body-color;
+
+}
+#oneP_btn:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-inner-border: transparent;
+    -fx-body-color:  rgba(186, 186, 186,0.8);
+    -fx-background-radius: 12px 0px 0px 12px;
+    -fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, -fx-body-color;
+
+}
+#twoP_btn:focused{
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-inner-border: transparent;
+    -fx-body-color:  rgba(186, 186, 186,0.8);
+    -fx-body-radius: 12px 0px 0px 12px;
+    -fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, -fx-body-color;
+}
+
+#p1_label{
+    -fx-font-family:"Copperplate Gothic Light", Helvetica, Arial, sans-serif;
+    -fx-font-size: 18pt;
+}
+#txt_oneP,#txt_twoP_1,#txt_twoP_2{
+    -fx-background-color: transparent;
+    -fx-font-family:"Copperplate Gothic Light", Helvetica, Arial, sans-serif;
+    -fx-font-size: 15pt;
+    -fx-text-fill: white;
+}
+#back_btn{
+    -fx-background-color: transparent;
+}
+#cancel_btn{
+    -fx-background-color: transparent;
+}
+#back_btn:hover{
+    -fx-graphic: url("/images/back-arrow2.png");
+}
+#cancel_btn:hover{
+    -fx-graphic: url("/images/cancel2.png");
+    -fx-background-color: transparent;
+}
+#help_btn{
+    -fx-background-color: transparent;
+}
+#help_btn:hover{
+    -fx-graphic: url("/images/question-circular-button.png");
+}

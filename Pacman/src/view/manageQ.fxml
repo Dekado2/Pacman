@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="544.0" minWidth="972.9998779296875" pickOnBounds="true" prefHeight="570.0" prefWidth="1013.333251953125" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.questionsController">
+  <children>
+
+    <ImageView fitHeight="570.0" fitWidth="1013.3333126618901" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" style="">
+      <image>
+        <Image url="@../images/11.png" />
+      </image>
+    </ImageView>
+            <ImageView fitHeight="570.0" fitWidth="1013.3333126618901" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/11Animated.gif" backgroundLoading="true"/>
+      </image>
+    </ImageView>
+    <SplitPane fx:id="splitpane" focusTraversable="true" layoutX="233.0" layoutY="215.0" prefHeight="40.0" prefWidth="570.0" style="&#10;-fx-background-color:transparent;" />
+    <TableView fx:id="managQ_tbl" layoutX="69.0" layoutY="235.0" prefHeight="214.0" prefWidth="887.0" stylesheets="@css/table.css">
+      <columns>
+       <TableColumn id="question" fx:id="questionID" editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="30.0" text="#" />
+        <TableColumn id="question" fx:id="question" editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="317.0" text="Question" />
+        <TableColumn id="options" fx:id="options" editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="262.0" text="Options" />
+        <TableColumn id="answer" fx:id="answer" editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="187.0" text="Correct Answer" />
+        <TableColumn id="difficulty" fx:id="difficulty" editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="118.0" text="Difficulty" />
+      </columns>
+    </TableView>
+    <Label id="manageQ_lbl" fx:id="managQ_lbl" layoutX="69.0" layoutY="184.0" style="" stylesheets="@css/main_buttons.css" text="manage questions" textFill="WHITE" underline="false" />
+    <Button fx:id="remove_btn" layoutX="282.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="46.0" prefWidth="122.0" style="-fx-font-size:12pt" text="Remove" textFill="WHITE">
+      <stylesheets>
+        <URL value="@css/main_buttons.css" />
+      </stylesheets>
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/003-interface.png" />
+               </image>
+            </ImageView>
+         </graphic>
+    </Button>
+      <Button fx:id="edit_btn" layoutX="425.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="46.0" prefWidth="122.0" style="-fx-font-size:12pt" text="Edit" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@css/main_buttons.css" />
+         </stylesheets>
+      </Button>
+      <Button fx:id="add_btn" layoutX="562.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="46.0" prefWidth="122.0" style="-fx-font-size:12pt" text="Add" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/001-signs.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@css/main_buttons.css" />
+         </stylesheets>
+      </Button>
+      <Button fx:id="back_btn" layoutX="874.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" stylesheets="@css/playerNickname.css">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="cancel_btn" layoutX="932.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" stylesheets="@css/playerNickname.css">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cancel.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+  </children>
+</AnchorPane>

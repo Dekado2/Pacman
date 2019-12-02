@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="544.0" minWidth="972.9998779296875" pickOnBounds="true" prefHeight="570.0" prefWidth="1013.333251953125" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.editQuestionsController">
+  <children>
+
+    <ImageView fitHeight="570.0" fitWidth="1013.3333126618901" pickOnBounds="true" preserveRatio="true" style="">
+      <image>
+        <Image url="@../images/11.png" />
+      </image>
+    </ImageView>
+            <ImageView fitHeight="570.0" fitWidth="1013.3333126618901" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/11Animated.gif" backgroundLoading="true"/>
+      </image>
+    </ImageView>
+    <Label id="addQ_lbl" fx:id="editQ_lbl" layoutX="50.0" layoutY="180.0" style="-fx-font-family: &quot;PacFont&quot;, Helvetica, Arial, sans-serif;;" stylesheets="@css/main_buttons.css" text="edit questions" textFill="WHITE" underline="false" />
+      <Button fx:id="edit_btn" layoutX="446.0" layoutY="494.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="46.0" prefWidth="122.0" style="-fx-font-size:12pt" text="Update" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@css/main_buttons.css" />
+         </stylesheets>
+      </Button>
+      <Button fx:id="back_btn" layoutX="874.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" stylesheets="@css/playerNickname.css">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="cancel_btn" layoutX="932.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" stylesheets="@css/playerNickname.css">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cancel.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="QText_lbl" layoutX="49.0" layoutY="245.0" stylesheets="@css/main_buttons.css" text="Question text:" textFill="WHITE" />
+      <Label fx:id="possibleAns_lbl" layoutX="49.0" layoutY="316.0" stylesheets="@css/main_buttons.css" text="Possible answers:" textFill="WHITE" />
+      <Label fx:id="a_lbl" layoutX="49.0" layoutY="356.0" stylesheets="@css/main_buttons.css" text="A." textFill="WHITE" />
+      <TextField fx:id="a_txt" layoutX="75.0" layoutY="347.0" prefHeight="38.0" prefWidth="210.0" stylesheets="@css/main_buttons.css" />
+      <Separator layoutX="75.0" layoutY="386.0" prefHeight="8.0" prefWidth="210.0" />
+      <Separator layoutX="75.0" layoutY="433.0" prefHeight="8.0" prefWidth="210.0" />
+      <TextField fx:id="b_txt" layoutX="75.0" layoutY="394.0" prefHeight="38.0" prefWidth="210.0" stylesheets="@css/main_buttons.css" />
+      <Label fx:id="b_lbl" layoutX="49.0" layoutY="403.0" stylesheets="@css/main_buttons.css" text="B." textFill="WHITE" />
+      <Separator layoutX="336.0" layoutY="386.0" prefHeight="8.0" prefWidth="210.0" />
+      <TextField fx:id="c_txt" layoutX="336.0" layoutY="347.0" prefHeight="38.0" prefWidth="210.0" stylesheets="@css/main_buttons.css" />
+      <Label fx:id="c_lbl" layoutX="310.0" layoutY="356.0" stylesheets="@css/main_buttons.css" text="C." textFill="WHITE" />
+      <Label fx:id="d_lbl" layoutX="310.0" layoutY="403.0" stylesheets="@css/main_buttons.css" text="D." textFill="WHITE" />
+      <TextField fx:id="d_txt" layoutX="336.0" layoutY="394.0" prefHeight="38.0" prefWidth="210.0" stylesheets="@css/main_buttons.css" />
+      <Separator layoutX="336.0" layoutY="433.0" prefHeight="8.0" prefWidth="210.0" />
+      <Label fx:id="correctAns_lbl" layoutX="49.0" layoutY="464.0" stylesheets="@css/main_buttons.css" text="Correct answer:" textFill="WHITE" />
+      <ComboBox fx:id="correctAns_cb" layoutX="236.0" layoutY="457.0" prefHeight="39.0" prefWidth="90.0" promptText="..." stylesheets="@css/main_buttons.css" />
+      <Label id="difficulty_lbl" fx:id="difficulty_lbl" layoutX="587.0" layoutY="464.0" stylesheets="@css/main_buttons.css" text="Difficulty:" textFill="WHITE" />
+      <ComboBox fx:id="difficulty_cb" layoutX="718.0" layoutY="457.0" prefHeight="39.0" prefWidth="267.0" promptText="Select a difficulty" stylesheets="@css/main_buttons.css" />
+      <TextArea fx:id="q_txt" layoutX="210.0" layoutY="226.0" prefHeight="70.0" prefWidth="724.0" style="-fx-background-color: transparent;" stylesheets="@css/main_buttons.css" />
+  </children>
+</AnchorPane>

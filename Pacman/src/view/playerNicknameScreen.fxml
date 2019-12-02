@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane minHeight="544.0" minWidth="972.9998779296875" pickOnBounds="true" prefHeight="570.0" prefWidth="1013.333251953125" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.playerNicknameController">
+  <children>
+    <ImageView fitHeight="570.0" fitWidth="1013.3333126618901" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/11.png" />
+      </image>
+    </ImageView>
+            <ImageView fitHeight="570.0" fitWidth="1013.3333126618901" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/11Animated.gif" backgroundLoading="true"/>
+      </image>
+    </ImageView>
+    <SplitPane fx:id="splitpane" focusTraversable="true" layoutX="233.0" layoutY="215.0" prefHeight="40.0" prefWidth="570.0" style="&#10;-fx-background-color:transparent;">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="100.0">
+          <children>
+            <Button fx:id="oneP_btn" layoutX="0.0" layoutY="0.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="20.0" prefWidth="279.0" style="" text="One player">
+              <stylesheets>
+                <URL value="@css/playerNickname.css" />
+              </stylesheets>
+              <textFill>
+                <Color blue="0.875" green="0.875" red="0.875" fx:id="x1" />
+              </textFill>
+            </Button>
+            <Button fx:id="twoP_btn" layoutX="276.0" layoutY="0.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="20.0" prefWidth="279.0" style="" text="Two players" textFill="$x1">
+              <stylesheets>
+                <URL value="@css/playerNickname.css" />
+              </stylesheets>
+            </Button>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+    <Label layoutX="206.0" layoutY="182.0" style="-fx-font-size: 18pt;&#10;    -fx-font-family:&quot;Copperplate Gothic Light&quot;, Helvetica, Arial, sans-serif;" text="Please choose number of players:" textFill="WHITE" />
+    <StackPane fx:id="stackPane_nickname" layoutX="234.0" layoutY="274.0" prefHeight="187.0" prefWidth="541.0" visible="true">
+      <children>
+        <Pane fx:id="p2_panel" prefHeight="200.0" prefWidth="200.0" visible="false">
+          <children>
+            <Label id="p1_label" layoutX="90.0" layoutY="14.0" text="Player 1:" textFill="WHITE">
+              <stylesheets>
+                <URL value="@css/playerNickname.css" />
+              </stylesheets>
+            </Label>
+            <Separator layoutX="90.0" layoutY="71.0" prefHeight="20.0" prefWidth="425.0" />
+            <TextField fx:id="txt_twoP_1" layoutX="90.0" layoutY="50.0" prefHeight="21.0" prefWidth="425.0" promptText="Please insert your nickname" text="">
+              <stylesheets>
+                <URL value="@css/playerNickname.css" />
+              </stylesheets>
+            </TextField>
+            <Label id="p1_label" layoutX="90.0" layoutY="96.0" text="Player 2:" textFill="WHITE">
+              <stylesheets>
+                <URL value="@css/playerNickname.css" />
+              </stylesheets>
+            </Label>
+            <Separator layoutX="90.0" layoutY="153.0" prefHeight="20.0" prefWidth="425.0" />
+            <TextField fx:id="txt_twoP_2" layoutX="90.0" layoutY="132.0" prefHeight="21.0" prefWidth="425.0" promptText="Please insert your nickname" text="">
+              <stylesheets>
+                <URL value="@css/playerNickname.css" />
+              </stylesheets>
+            </TextField>
+          </children>
+        </Pane>
+        <Pane fx:id="p1_panel" prefHeight="200.0" prefWidth="200.0" visible="false">
+          <children>
+            <Separator layoutX="90.0" layoutY="71.0" prefHeight="20.0" prefWidth="425.0" />
+            <Label id="p1_label" layoutX="90.0" layoutY="14.0" text="Player 1:" textFill="WHITE">
+              <stylesheets>
+                <URL value="@css/playerNickname.css" />
+              </stylesheets>
+            </Label>
+            <TextField fx:id="txt_oneP" layoutX="90.0" layoutY="50.0" prefHeight="21.0" prefWidth="425.0" promptText="Please insert your nickname" text="">
+              <stylesheets>
+                <URL value="@css/playerNickname.css" />
+              </stylesheets>
+            </TextField>
+          </children>
+        </Pane>
+      </children>
+    </StackPane>
+    <Button id="start_btn" fx:id="start_btn" layoutX="423.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleButtonClicks" opacity="0.63" prefHeight="81.0" prefWidth="168.0" text="Start" textAlignment="RIGHT" textFill="WHITE" textOverrun="CLIP">
+      <stylesheets>
+        <URL value="@css/main_buttons.css" />
+      </stylesheets>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pacmanIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+    </Button>
+      <Button fx:id="back_btn" layoutX="874.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" stylesheets="@css/playerNickname.css">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="cancel_btn" layoutX="932.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" stylesheets="@css/playerNickname.css">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cancel.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+  </children>
+</AnchorPane>
