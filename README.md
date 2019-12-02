@@ -1,5 +1,5 @@
-# Pacman (Fifth Project)
-Modified Pacman game with additions such as: optional local player vs player mode - each player gets 40 seconds to play
+# Pacman
+Modified Pacman game with additions (Fifth Project) such as: optional local player vs player mode - each player gets 40 seconds to play
 before it goes over to the other player's turn, after which the player resumes playing from the last point his game paused on.
 The player with the most points accumulated after both players lose all their life points - wins.
 Upon eating all the candies (besides the poison candy) the player continues to the next level.
